@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/DubHacks/static/css/main.b100e6da.chunk.css",
+    "main.js": "/DubHacks/static/js/main.80af0e0c.chunk.js",
+    "main.js.map": "/DubHacks/static/js/main.80af0e0c.chunk.js.map",
+    "runtime-main.js": "/DubHacks/static/js/runtime-main.5fbceb70.js",
+    "runtime-main.js.map": "/DubHacks/static/js/runtime-main.5fbceb70.js.map",
+    "static/js/2.ac278706.chunk.js": "/DubHacks/static/js/2.ac278706.chunk.js",
+    "static/js/2.ac278706.chunk.js.map": "/DubHacks/static/js/2.ac278706.chunk.js.map",
+    "index.html": "/DubHacks/index.html",
+    "precache-manifest.d3525eeaa71cd3bddfcd7be0071283a3.js": "/DubHacks/precache-manifest.d3525eeaa71cd3bddfcd7be0071283a3.js",
+    "service-worker.js": "/DubHacks/service-worker.js",
+    "static/css/main.b100e6da.chunk.css.map": "/DubHacks/static/css/main.b100e6da.chunk.css.map",
+    "static/media/logo.svg": "/DubHacks/static/media/logo.25bf045c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5fbceb70.js",
+    "static/js/2.ac278706.chunk.js",
+    "static/css/main.b100e6da.chunk.css",
+    "static/js/main.80af0e0c.chunk.js"
+  ]
+}
