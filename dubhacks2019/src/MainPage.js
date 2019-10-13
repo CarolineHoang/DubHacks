@@ -1,6 +1,6 @@
 //DUBHACKS, Done by Chenoa in prep phase
 
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.png';
 import styled from 'styled-components';
 
@@ -38,7 +38,6 @@ const Input = styled.div`
 `
 const ButtonCon = styled.div`
   display: flex; 
-  dislay: rows;
   width: 20%;
   justify-content: space-evenly;
   padding: 1rem;
@@ -72,8 +71,32 @@ const Selector = styled.input`
   align-content: center;
 `
 
-function App() {
+class MainPage extends Component {
+  constructor(){
+    super();
+    this.state={selection: '', loaded:0 };
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleSelectionChange = this.handleSelectionChange.bind(this);
+    }
   
+
+
+
+  handleSelectionChange(event) {
+      var newValue = event.target.files[0];
+      this.setState({   selection: newValue });
+      // console.log(this.state.selection)
+      }
+
+    handleSubmit(event) {
+      
+      alert('Value Submitted: ' + this.state.selection);
+    event.preventDefault();
+    }
+
+ 
+
+  render() {
   return (
     <Container>
       
@@ -84,14 +107,14 @@ function App() {
         <Input>
           Input your video file here: 
         </Input>
-          <Selector type="file" name="pic" accept="image/*"/>
+          <Selector type="file" name="pic" accept="image/*" onChange={this.handleSelectionChange}/>
           <ButtonCon>
-          <Buttons>Add Contact</Buttons>
+          <Buttons type= 'submit' onClick={this.handleSubmit}>Add Contact</Buttons>
           <Buttons>Detect</Buttons>
           </ButtonCon>
       </SubContainer>
     </Container>
-  );
+   );
+  }
 }
-
-export default App;
+export default MainPage;
