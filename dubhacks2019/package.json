@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://carolinehoang.github.io/DubHacks/",
-  
   "dependencies": {
     "gh-pages": "^2.1.1",
     "react": "^16.10.2",
