@@ -59,8 +59,8 @@ function App() {
           <Route exact path="/" component={home} />
           <Route exact path="/face" component={displaypage} />
         </Switch>
+
     </div>
   );
 }
-
 export default App;
